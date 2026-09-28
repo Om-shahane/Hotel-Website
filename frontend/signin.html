@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Login — Super Galaxy Hotel</title>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+
+    <a href="index.html" class="brand">
+      Super Galaxy <span>Hotel</span>
+    </a>
+
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="rooms.html">Rooms &amp; Suites</a>
+      <a href="booking.html">Book</a>
+      <a href="contact.html">Contact</a>
+      <a href="signin.html" class="active">Login</a>
+      <a href="booking.html" class="nav-cta">Reserve</a>
+    </nav>
+
+  </div>
+</header>
+
+<section class="login-hero">
+
+  <div class="login-image">
+    <img src="https://images.pexels.com/photos/31080809/pexels-photo-31080809.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Super Galaxy Hotel lounge with warm lighting and armchairs">
+  </div>
+
+  <div class="login-form-side">
+
+    <div class="login-panel">
+
+      <div class="kicker">Super Galaxy Hotel</div>
+
+      <h1>Login</h1>
+
+      <p class="intro">Login to your hotel account.</p>
+
+      <form id="login-form">
+
+        <div class="field">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+          >
+        </div>
+
+        <div class="field">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+          >
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+          Login
+        </button>
+
+        <p id="login-message"></p>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+
+<script src="js/main.js"></script>
+<script src="js/login.js"></script>
+
+</body>
+</html>

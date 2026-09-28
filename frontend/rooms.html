@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rooms — Super Galaxy Hotel</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">Super Galaxy <span>Hotel</span></a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="rooms.html" class="active">Rooms</a>
+      <a href="booking.html">Book</a>
+     <a href="contact.html">Contact</a>
+<a href="signin.html">Login</a>
+<a href="booking.html" class="nav-cta">Reserve</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="wrap">
+    <div class="kicker">Accommodation</div>
+    <h1>Rooms &amp; suites</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="filter-bar">
+      <button class="filter-btn active" data-type="all">All rooms</button>
+      <button class="filter-btn" data-type="Standard">Standard</button>
+      <button class="filter-btn" data-type="Deluxe">Deluxe</button>
+      <button class="filter-btn" data-type="Family">Family</button>
+      <button class="filter-btn" data-type="Suite">Suites</button>
+    </div>
+    <div class="room-grid" id="rooms-grid">
+      <p class="loading-msg">Loading rooms…</p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="brand">Super Galaxy Hotel</div>
+        <p>A twenty-six room hotel on the river, open to guests since 1932.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="rooms.html">Rooms</a>
+        <a href="booking.html">Book a stay</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Visit</h4>
+        <address>The Royal Grand 7-Star Hotel<br>S.L 51/11/1, Navale Brg,<br>Phase 2, Wadgaon Budruk,<br>Narhe, Pune, Maharashtra</address>
+        <a class="map-directions-link" href="https://www.google.com/maps/search/?api=1&query=Hotel%20Pune%20Pride%2C%20Navale%20Bridge%2C%20Pune%2C%20Maharashtra" target="_blank" rel="noopener">View on Google Maps →</a>
+      </div>
+      <div class="footer-col">
+        <h4>Reach us</h4>
+        <a href="tel:+10000000000">+1 (000) 000-0000</a>
+        <a href="mailto:stay@supergalaxyhotel.example">stay@supergalaxyhotel.example</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Super Galaxy Hotel. All rights reserved.</span>
+      <span>Narhe, Pune, since 1932</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/rooms.js"></script>
+<script>renderRooms('rooms-grid');</script>
+</body>
+</html>
